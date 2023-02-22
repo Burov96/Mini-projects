@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.bg{
+    background: url('/5/IMG_20220419_092531.jpg')no-repeat center center/cover ;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    filter:blur(30px)
+}
+.loading-text{
+    color: white;
+    font-size: 50px;
+}
+.loaded{
+    color: aliceblue;
+    position: absolute;
+    bottom: -10vh;
+    transition: transform 1s cubic-bezier(0.37, 0.91, 0.96, 1);
+    cursor: not-allowed;
+    font-size:9vh;
+}
+.loaded.show{
+    transform: translateY(-60px) scale(1.5);
+    animation: bottom-to-top 1s ease-out infinite 3s;
+}
+@keyframes bottom-to-top {
+0% {
+    transform:translateY(-12vh);
+    }    
+    15%{
+        transform: translateY(-11vh); color:white;
+    }
+    30%{
+        transform: translateY(-14vh); color: red;
+    }
+    45%{
+        transform: translateY(-12vh); color: white;
+    }
+    60%{
+        transform:translateY(-14vh);color: red;
+        }  
+    75%{
+        transform: translateY(-11vh); color:white;
+    }
+    100%{
+        transform:translateY(-12vh);
+        }  
+}
+/* .block:hover .loaded.show{
+    animation-play-state: paused
+}
+.block{
+    background-color: antiquewhite;
+    position: absolute;
+    left: 0vw;
+    bottom: 0vh;
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+} */

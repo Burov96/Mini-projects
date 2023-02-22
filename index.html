@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Projects</title>
+    <style>
+      body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .container {
+        background: transparent;
+        opacity: 0.5;
+        max-width: 600px;
+        width: 90%;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      }
+      .container:hover{
+        transition: 1s;
+        opacity: 1;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        margin-top: 20px;
+      }
+
+      li:hover {
+        transition: 0.3s;
+        background-color:#0ad4df28;
+        /* border-style:outset; */
+        color:#4d034f;
+        scale: 1.05;
+        margin-left: 10px;
+        /* border-radius: 7px; */
+        cursor: pointer;
+}
+
+      a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>HTML, CSS and JS Projects</h1>
+      <ul>
+        <li>
+          <a href=".\1\index.html">Expanding images</a>
+          <p href=".\1\index.html">That's a simple page with expanding cards, involving a little bit of CSS and JS. The photos were taken by me 😌</p>
+        </li>
+        <li>
+          <a href=".\2\index.html">Progress steps</a>
+          <p href=".\2\index.html">This is a loading phases, seen on ordering websites, or a paying steps on e-commerce sites.</p>
+        </li>
+        <li>
+          <a href=".\4\index.html">Blog</a>
+          <p href=".\4\index.html">This is a simple blog project I made, to train my CSS. It has some basic but fundamental functions.</p>
+        </li>
+        <li>
+          <a href=".\5\index.html">Blurry Loading</a>
+          <p href=".\5\index.html">The idea behind this one is going blurry from 0, until it loads to 100%, where the image is clear</p>
+        </li>
+        <li>
+          <a href=".\6\index.html">Scroll Animation</a>
+          <p href=".\6\index.html">This just adds new divs as we scroll. Of course, it could be made to do more complicated stuff, especially with React or even just pure Vanilla..</p>
+        </li>
+        <li>
+          <a href=".\7\index.html">Split Landing Page</a>
+          <p href=".\7\index.html">This is a sidewise expanding page, made for situations where it's expected clients to make a decision for example.</p>
+        </li>
+        <li>
+          <a href=".\8\index.html">Form Wave Animation</a>
+          <p href=".\8\index.html">Fancy loading page, which took some time in the developing to be honest.</p>
+        </li>
+      </ul>
+    </div>
+    <script>const body=document.querySelector('body')
+    const li=document.querySelectorAll('li')
+    const projectLinks = document.querySelectorAll('li a');
+    li.forEach(item => {
+      console.log(projectLinks);
+    item.addEventListener('click',(ev)=>{
+      ev.preventDefault();
+      const url = ev.target.getAttribute('href');
+      body.style.transform='scale(0)';
+      body.style.transition = 'transform 0.45s ease-in-out';
+      setTimeout(function() {
+        window.location.href = url;
+  }, 380);
+});
+  });</script>
+  </body>
+</html>
