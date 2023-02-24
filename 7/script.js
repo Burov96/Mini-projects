@@ -2,6 +2,7 @@ const left=document.querySelector('.left')
 const right=document.querySelector('.right')
 const container = document.querySelector('.container')
 const home = document.getElementById("hidden-button");
+const az=document.getElementById('')
 home.addEventListener("click", (ev) => {
   ev.preventDefault();
   window.location.href = "https://burov96.github.io/Mini-projects/";

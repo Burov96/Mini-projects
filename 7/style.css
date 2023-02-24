@@ -93,7 +93,7 @@ h1{
 }
 .split.left{
     left: 0;
-    background: url('./7/IMG_20220825_195856.jpg');
+    background: url('https://i.ibb.co/QfKbggG/IMG-20220825-195856.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -108,7 +108,7 @@ h1{
 }
 .split.right{
     right: 0;
-    background: url('./7/indian.jfif');
+    background: url('https://i.ibb.co/Sr0Hp3j/indian.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
