@@ -9,11 +9,31 @@
     --other-width:25%;
     --speed:680ms
 }
-
+#hidden-button {
+    z-index: 500;
+background-image: url('.home.png');
+background-color: transparent;
+background-repeat: no-repeat ;
+background-position: center;
+border: none;
+background-size: 50px 50px;
+padding: 20px;
+position: absolute;
+left:3vh;
+top:3%;
+}
+#hidden-button:hover{
+cursor: pointer;
+transform: scale(1.2);
+transition: transform .5s ease-in;
+}
 *{
     box-sizing: border-box;
 }
 body {
+    scale: 0.1;
+    transform: scale(10.0);
+    transition: transform 0.5s cubic-bezier(0, 1.62, 0.88, 0.7);
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     overflow: hidden;
@@ -73,7 +93,7 @@ h1{
 }
 .split.left{
     left: 0;
-    background: url('/7/IMG_20220825_195856.jpg');
+    background: url('./7/IMG_20220825_195856.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -88,7 +108,7 @@ h1{
 }
 .split.right{
     right: 0;
-    background: url('/7/indian.jfif');
+    background: url('./7/indian.jfif');
     background-repeat: no-repeat;
     background-size: cover;
     

@@ -1,4 +1,9 @@
 const products = document.querySelectorAll(".product");
+const home = document.getElementById("hidden-button");
+home.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  window.location.href = "https://burov96.github.io/Mini-projects/";
+});
 window.addEventListener("scroll", checker);
 checker()
 function checker(){

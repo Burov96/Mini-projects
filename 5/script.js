@@ -1,6 +1,11 @@
 const blur=document.querySelector('.loading-text');
 const bg=document.querySelector('.bg');
 const loaded=document.querySelector('.loaded');
+const home = document.getElementById("hidden-button");
+home.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  window.location.href = "https://burov96.github.io/Mini-projects/";
+});
 let load=0
 
 const blurring=()=>{

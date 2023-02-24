@@ -2,7 +2,28 @@
 *{
     box-sizing: border-box;
 }
+#hidden-button {
+    z-index: 500;
+background-image: url('./home.png');
+background-color: transparent;
+background-repeat: no-repeat ;
+background-position: center;
+border: none;
+background-size: 50px 50px;
+padding: 20px;
+position: absolute;
+left:3vh;
+top:3%;
+}
+#hidden-button:hover{
+cursor: pointer;
+transform: scale(1.2);
+transition: transform .5s ease-in;
+}
 body {
+    scale: 0.1;
+    transform: scale(10.0);
+    transition: transform 0.5s cubic-bezier(0, 1.62, 0.88, 0.7);
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
@@ -12,7 +33,7 @@ body {
     margin: 0;
 }
 .bg{
-    background: url('/5/IMG_20220419_092531.jpg')no-repeat center center/cover ;
+    background: url('./5/IMG_20220419_092531.jpg')no-repeat center center/cover ;
     z-index: -1;
     position: absolute;
     top: 0;

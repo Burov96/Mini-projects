@@ -4,6 +4,24 @@
     <meta charset="utf-8">
     <title>HTML Projects</title>
     <style>
+      #hidden-button {
+        z-index: 500;
+  background-image: url('home.png');
+  background-color: transparent;
+  background-repeat: no-repeat ;
+  background-position: center;
+  border: none;
+  background-size: 50px 50px;
+  padding: 20px;
+  position: absolute;
+   left:3vh;
+   top:3%;
+}
+#hidden-button:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform .5s ease-in;
+}
       body {
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -70,11 +88,12 @@
     </style>
   </head>
   <body>
+
     <div class="container">
       <h1>HTML, CSS and JS Projects</h1>
       <ul>
-        <li>
-          <a href=".\1\index.html">Expanding images</a>
+        <li href=".\1\index.html">
+          <a>Expanding images</a>
           <p href=".\1\index.html">That's a simple page with expanding cards, involving a little bit of CSS and JS. The photos were taken by me 😌</p>
         </li>
         <li>
@@ -101,6 +120,7 @@
           <a href=".\8\index.html">Form Wave Animation</a>
           <p href=".\8\index.html">Fancy loading page, which took some time in the developing to be honest.</p>
         </li>
+        <li><a href url="https://burov96.github.io/Paycheck-calculator/">Paycheck calculator</a><p href="https://burov96.github.io/Paycheck-calculator/">Recently, i've been working at a bar, where the owner calculated our hours and paychecks in his favour. Calculating the hours was little time consuming, so i developed an application that calcuated my hours and the expected paycheck automatically. All of my colegues are actually using it.</p></li>
       </ul>
     </div>
     <script>const body=document.querySelector('body')
@@ -112,10 +132,10 @@
       ev.preventDefault();
       const url = ev.target.getAttribute('href');
       body.style.transform='scale(0)';
-      body.style.transition = 'transform 0.45s ease-in-out';
+      body.style.transition = 'transform 0.25s ease-in-out';
       setTimeout(function() {
         window.location.href = url;
-  }, 380);
+  }, 280);
 });
   });</script>
   </body>

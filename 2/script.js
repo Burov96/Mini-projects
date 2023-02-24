@@ -2,6 +2,11 @@ const progress=document.getElementById('progress');
 const back=document.getElementById('back');
 const next=document.getElementById('next');
 const circles=document.querySelectorAll('.circle');
+const home = document.getElementById("hidden-button");
+home.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  window.location.href = "https://burov96.github.io/Mini-projects/";
+});
 
 let currentActive=1;
 
