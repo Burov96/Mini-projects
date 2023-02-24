@@ -29,7 +29,7 @@ border: none;
 background-size: 50px 50px;
 padding: 20px;
 position: absolute;
-left:3vh;
+right:4vh;
 top:3%;
 }
 #hidden-button:hover{
